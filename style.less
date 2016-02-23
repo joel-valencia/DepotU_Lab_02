@@ -1,0 +1,186 @@
+@primaryBlue: #6ac;
+@highlightBlue: lighten(saturate(@primaryBlue, 20%), 10%);
+@primaryLight: white;
+
+.background-color (@a) when (@a = @primaryBlue) {
+  color: white;
+}
+.background-color (@a) {
+  background-color: @a;
+}
+
+
+.border-radius (@radius: 5px) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+body {
+    margin: 100px 0 0 0;
+    font-family: Times, 'Times New Roman', serif;
+    background-color: @primaryLight;
+}
+
+a {
+    color: @primaryBlue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: @highlightBlue;
+}
+
+#nav {
+    background-color: @primaryBlue;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+#nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    
+    li {
+        list-style: none;
+        display: inline;
+        
+        a {
+            text-decoration: none;
+            color: @primaryLight;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+            margin-top: 5px;
+            padding: 10px 20px;
+            .border-radius();
+        }
+
+        a:hover {
+            background-color: @highlightBlue;
+        }
+    }
+}
+
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    border-top: 1px solid @primaryBlue;
+    border-bottom: 1px solid @primaryBlue;
+    text-align: center;
+    padding: 7px 0 7px 0;
+    clear: left;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+#about {
+    padding-top: 30px;
+}
+
+#about .container, #skills .container {
+    padding-left: 50px;
+}
+
+#about p, #skills p {
+    float: left;
+    width: 250px;
+    padding-right: 50px;
+}
+
+#projects .container, #resume .container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#projects .container p {
+    margin-top: 5px;
+}
+
+.exp-date {
+    margin-left: 15px;
+    font-style: italic;
+    color: @primaryBlue;
+}
+
+.exp-desc {
+    margin-left: 15px;
+}
+
+#contact .container {
+    .background-color(@primaryBlue);
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 450px;
+    height: 370px;
+    padding-top: 40px;
+    text-align: left;
+    padding-left: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    border: 2px solid desaturate(@primaryBlue, 100%);
+    .border-radius();
+    
+    input {
+        width: 300px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    textarea {
+        width: 300px;
+        height: 200px;
+        margin-top: 2px;
+    }
+}
+
+
+
+#footer {
+    border-top: 2px solid @primaryBlue;
+    margin-top: 50px;
+    padding-top: 15px;
+    color: @primaryBlue;
+    text-align: center;
+   
+    a {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid @primaryBlue;
+        .border-radius();
+    }
+    
+    a:hover {
+        color: @primaryLight;
+        background-color: @highlightBlue;
+        border: 1px solid @highlightBlue;
+    }
+}

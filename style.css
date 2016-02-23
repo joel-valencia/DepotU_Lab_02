@@ -1,159 +1,150 @@
 body {
-    margin: 100px 0 0 0;
-    font-family: Times, 'Times New Roman', serif;
+  margin: 100px 0 0 0;
+  font-family: Times, 'Times New Roman', serif;
+  background-color: white;
 }
-
 a {
-    color: #6ac;
-    text-decoration: none;
+  color: #6ac;
+  text-decoration: none;
 }
-
 a:hover {
-    color: #5df;
+  color: #7dc4e8;
 }
-
 #nav {
-    background-color: #6ac;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  background-color: #6ac;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
 #nav .container {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
 #nav ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
-
 #nav ul li {
-    list-style: none;
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 50px;
+  list-style: none;
+  display: inline;
 }
-
 #nav ul li a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
-
 #nav ul li a:hover {
-    color: #5df;
+  background-color: #7dc4e8;
 }
-
 .container {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 h1 {
-    margin-bottom: 0;
-    text-align: center;
+  margin-bottom: 0;
+  text-align: center;
 }
-
 h3 {
-    margin-top: 0;
-    text-align: center;
+  margin-top: 0;
+  text-align: center;
 }
-
 h2 {
-    border-top: 1px solid #6ac;
-    border-bottom: 1px solid #6ac;
-    text-align: center;
-    padding: 7px 0 7px 0;
-    clear: left;
+  border-top: 1px solid #6ac;
+  border-bottom: 1px solid #6ac;
+  text-align: center;
+  padding: 7px 0 7px 0;
+  clear: left;
 }
-
 h4 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 #about {
-    padding-top: 30px;
+  padding-top: 30px;
 }
-
-#about .container, #skills .container {
-    padding-left: 50px;
+#about .container,
+#skills .container {
+  padding-left: 50px;
 }
-
-#about p, #skills p {
-    float: left;
-    width: 250px;
-    padding-right: 50px;
+#about p,
+#skills p {
+  float: left;
+  width: 250px;
+  padding-right: 50px;
 }
-
-#projects .container, #resume .container {
-    margin-left: 50px;
-    margin-right: 50px;
+#projects .container,
+#resume .container {
+  margin-left: 50px;
+  margin-right: 50px;
 }
-
 #projects .container p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
-
 .exp-date {
-    margin-left: 15px;
-    font-style: italic;
-    color: #6ac;
+  margin-left: 15px;
+  font-style: italic;
+  color: #6ac;
 }
-
 .exp-desc {
-    margin-left: 15px;
+  margin-left: 15px;
 }
-
 #contact .container {
-    background-color: #6ac;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 450px;
-    height: 370px;
-    padding-top: 40px;
-    text-align: left;
-    padding-left: 150px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 5px;
-    border: 2px solid #aaa;
+  color: white;
+  background-color: #6ac;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 450px;
+  height: 370px;
+  padding-top: 40px;
+  text-align: left;
+  padding-left: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  border: 2px solid #999999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
-
-#contact input {
-    width: 300px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+#contact .container input {
+  width: 300px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
-
-#contact textarea {
-    width: 300px;
-    height: 200px;
-    margin-top: 2px;
+#contact .container textarea {
+  width: 300px;
+  height: 200px;
+  margin-top: 2px;
 }
-
 #footer {
-    border-top: 2px solid #6ac;
-    margin-top: 50px;
-    padding-top: 15px;
-    color: #6ac;
-    text-align: center;
+  border-top: 2px solid #6ac;
+  margin-top: 50px;
+  padding-top: 15px;
+  color: #6ac;
+  text-align: center;
 }
-
 #footer a {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #6ac;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#footer a:hover {
+  color: white;
+  background-color: #7dc4e8;
+  border: 1px solid #7dc4e8;
 }
